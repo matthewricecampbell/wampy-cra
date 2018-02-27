@@ -25,7 +25,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     var WampyCra = {},
         isNode = (typeof process === 'undefined' ? 'undefined' : _typeof(process)) === 'object' && Object.prototype.toString.call(process) === '[object process]',
-        crypto = isNode ? require('crypto') : require('crypto-js');
+        crypto = require('crypto-js');
 
     function derive_key(secret, salt) {
         var iterations = arguments.length <= 2 || arguments[2] === undefined ? 1000 : arguments[2];
